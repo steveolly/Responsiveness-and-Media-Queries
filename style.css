@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background: url(./images/bg-intro-desktop.png);
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  background-color: rgba(247, 28, 11, 0.5);
+}
+main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.container {
+  margin: auto;
+  width: 60%;
+  align-items: center;
+  display: flex;
+  height: 100vh;
+}
+.note {
+  font-family: poppins;
+  color: rgba(255, 255, 255, 0.961);
+  margin: -20px;
+}
+.register {
+  padding: 0px;
+  margin: 20px;
+}
+.content-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(248, 32%, 49%);
+  color: rgba(255, 255, 255, 0.961);
+  border-radius: 5px;
+  width: 400px;
+  height: 30px;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 5px grey;
+}
+.content-2 {
+  background-color: rgba(255, 255, 255, 0.961);
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 5px 5px grey;
+}
+input {
+  width: 350px;
+  margin: 10px;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid grey;
+}
+.btn {
+  background-color: hsl(154, 59%, 51%);
+  color: rgba(255, 255, 255, 0.961);
+  cursor: pointer;
+}
+.text {
+  text-align: center;
+  font-size: 10px;
+}
+.text a {
+  text-decoration: none;
+  color: rgb(235, 13, 50);
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    width: 100%;
+    height: 100vh;
+    background: url(./images/bg-intro-mobile.png);
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(247, 28, 11, 0.5);
+  }
+  main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .note {
+    font-family: poppins;
+    color: rgba(255, 255, 255, 0.961);
+    padding-top: 30px;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+  .note h1 {
+    padding-bottom: 20px;
+  }
+  .note p {
+    width: 100%;
+  }
+  .register {
+    width: 100%;
+  }
+  .content-1 {
+    width: 100%;
+    text-align: center;
+    background-color: hsl(248, 32%, 49%);
+    color: rgba(255, 255, 255, 0.961);
+    border-radius: 5px;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 5px grey;
+  }
+  .content-2 {
+    width: 100%;
+  }
+  td {
+    width: 100%;
+  }
+  input {
+    margin-bottom: 10px;
+    height: 500px;
+    width: 100%;
+    height: 22px;
+    border-radius: 5px;
+    border: 1px solid grey;
+  }
+  .btn {
+    background-color: hsl(154, 59%, 51%);
+    color: rgba(255, 255, 255, 0.961);
+    cursor: pointer;
+  }
+}
